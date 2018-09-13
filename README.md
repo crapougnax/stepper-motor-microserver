@@ -28,4 +28,4 @@ sudo ../venv/bin/python setup.py install
 http://raspberrypi.local:5000/forward/4/50
 ```
 
-PATH FORMAT = /<direction>/<motor_id>/<steps>
+PATH FORMAT = `/<direction>/<motor_id>/<steps>`
