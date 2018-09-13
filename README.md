@@ -1,16 +1,32 @@
-# Stepper Motor Microserver
+# Stepper Motor Microserver for Raspberry Pi
 
-A python microserver to command 4 (or more) stepper motors
+A Python microserver to command 4 (or more) stepper motors
 
 ## Installation
+
+### Install packages
+
 ```
-sudo apt-get install python-virtualenv
+sudo apt-get update
+sudo apt-get install build-essential python-dev python-pip python-virtualenv
+```
+
+### Configure Python Virtual Env
+
+```
 python3 -m venv venv
 virtualenv venv
 . venv/bin/activate
+```
 
+### Install Flask
+
+```
 pip install flask
+```
 
+### Install Adafruit drivers
+```
 git clone https://github.com/adafruit/Adafruit-Motor-HAT-Python-Library.git
 cd Adafruit-Motor-HAT-Python-Library/
 sudo ../venv/bin/python setup.py install
